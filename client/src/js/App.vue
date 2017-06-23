@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header  mdl-layout--fixed-tabs">
       <header class="mdl-layout__header app-menu">
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title">{{ title }}</span>
@@ -16,14 +16,27 @@
         </nav>
       </div>
 
-      <div class="container app-container">
-        <router-view></router-view>
-      </div>
+      <main class="mdl-layout__content">
+          <div class="page-content">
+              <router-view></router-view>
+          </div>
+      </main>
+      <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer__left-section">
+              <div class="mdl-logo"></div>
+              <ul class="mdl-mini-footer__link-list">
+                  <li>
+                      <router-link to="/">{{ title }}</router-link>
+                  </li>
+                  <li><a href="#">Privacy & Terms</a></li>
+              </ul>
+          </div>
+      </footer>
     </div>
   </div>
 </template>
 
-<script scoped>
+<script>
   export default {
     name: 'app',
     data() {
@@ -34,14 +47,17 @@
     methods: {
       closeMenu(event) {
         if (event) event.preventDefault();
-        
+
         jQuery("#menu").removeClass("is-visible");
+
+        alert("Oi")
       }
-
-
     }
   }
 </script>
 
-<style>
+<style scoped>
+    .mdl-layout__header, .mdl-layout__tab-bar {
+        background-color: #bc2026 !important;
+    }
 </style>

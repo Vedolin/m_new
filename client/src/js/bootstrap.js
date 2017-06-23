@@ -11,3 +11,9 @@ window.axios = Axios;
 require('../sass/app.scss');
 require('../../../node_modules/material-design-lite/material.min.css');
 require('../../../node_modules/material-design-lite/material.min.js');
+
+require('jquery-ui/ui/widgets/autocomplete');
+
+window.Tether = require('tether');
+
+require('bootstrap');
