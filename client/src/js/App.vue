@@ -50,7 +50,6 @@
 
         jQuery("#menu").removeClass("is-visible");
 
-        alert("Oi")
       }
     }
   }

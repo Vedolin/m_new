@@ -5,11 +5,28 @@
               <h4 class="text-center">Informações sobre alimentação escolar.</h4>
               <p class="text-center lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
               <form class="box-form form-inline">
-                  <input class="box-search form-control" type="text" placeholder="Digite o nome da escola">
-                  <button v-on:click="search()" class="btn btn-outline-success" type="submit">Buscar</button>
+                  <input ref="search" class="box-search form-control" type="text" placeholder="Digite o nome da escola">
+                  <button v-on:click="search()" class="btn btn-outline-success" type="button">Buscar</button>
               </form>
           </div>
       </div>
+
+      <ul class="demo-list-two mdl-list">
+
+        <li class="mdl-list__item mdl-list__item--two-line">
+          <span class="mdl-list__item-primary-content">
+            <i class="material-icons">account_balance</i>
+            <span>Bryan Cranston</span>
+            <span class="mdl-list__item-sub-title">62 Episodes</span>
+          </span>
+          <span class="mdl-list__item-secondary-content">
+            <span class="mdl-list__item-secondary-info">Actor</span>
+            <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+          </span>
+        </li>
+
+      </ul>
+
   </div>
 </template>
 
@@ -17,8 +34,20 @@
   export default {
     data() {
       return {
-
+        schools: [
+          "CEI CONV. RECANTO DA ALEGRIA I",
+          "CEI CONV. BELEZINHA PRIMAVERA",
+          "EMEF PRES. NILO PEÇANHA - (TERCEI.)"
+        ]
       }
+    },
+    created() {
+    },
+    mounted() {
+
+      jQuery(this.$refs.search).autocomplete({
+        source: this.schools
+      });
     },
     methods: {
       search() {
@@ -29,6 +58,11 @@
 </script>
 
 <style scoped>
+    .demo-list-two {
+      margin: 0 auto;
+      width: 80%;
+    }
+
     .box-title {
         width: 45%;
         color: #424242;
