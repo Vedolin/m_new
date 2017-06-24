@@ -16554,12 +16554,6 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
-//
-//
-//
-//
-//
 
 exports.default = {
   name: 'app',
@@ -16610,6 +16604,8 @@ exports.default = {};
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+//
+//
 //
 //
 //
@@ -16763,6 +16759,9 @@ exports.default = {
     cardapio: function cardapio(event) {
       event.preventDefault();
       this.$router.push({ path: '/school' });
+    },
+    back: function back() {
+      window.history.back();
     }
   }
 };
@@ -16886,6 +16885,9 @@ exports.default = {
     cardapio: function cardapio(event) {
       event.preventDefault();
       this.$router.push({ path: '/school' });
+    },
+    back: function back() {
+      window.history.back();
     }
   }
 };
@@ -20482,7 +20484,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, "\n.mdl-layout__header[data-v-76d4b2eb], .mdl-layout__tab-bar[data-v-76d4b2eb] {\n    background-color: #005653 !important;\n}\n", ""]);
+exports.push([module.i, "\n.mdl-layout__header[data-v-76d4b2eb], .mdl-layout__tab-bar[data-v-76d4b2eb] {\n    background-color: #005653 !important;\n}\n.mdl-layout__content[data-v-76d4b2eb] {\n    margin-bottom: 15px;\n}\n", ""]);
 
 // exports
 
@@ -43677,7 +43679,21 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.comments($event)
       }
     }
-  }, [_vm._v("Comentários")])])]), _vm._v(" "), _c('h3', [_vm._v("EMEF ALVARES DE AZEVEDO")]), _vm._v(" "), _c('p', [_vm._v("\n    2 A 6 ANOS ...\n  ")]), _vm._v(" "), _vm._m(0), _vm._m(1), _vm._v(" "), _c('strong', [_vm._v("ALMOÇO")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('strong', [_vm._v("LANCHE")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('p'), _vm._v(" "), _vm._m(4)])
+  }, [_vm._v("Comentários")])])]), _vm._v(" "), _c('h3', [_vm._v("EMEF ALVARES DE AZEVEDO")]), _vm._v(" "), _c('p', [_vm._v("\n    2 A 6 ANOS ...\n  ")]), _vm._v(" "), _vm._m(0), _vm._m(1), _vm._v(" "), _c('strong', [_vm._v("ALMOÇO")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('strong', [_vm._v("LANCHE")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('p'), _vm._v(" "), _c('div', {
+    staticStyle: {
+      "font-size": "19px"
+    }
+  }, [_c('button', {
+    staticClass: "mdl-button mdl-js-button mdl-button--fab mdl-button--colored",
+    staticStyle: {
+      "background-color": "#005653"
+    },
+    on: {
+      "click": _vm.back
+    }
+  }, [_c('i', {
+    staticClass: "material-icons"
+  }, [_vm._v("chevron_left")])]), _vm._v(" "), _c('br'), _vm._v("\n    Voltar\n  ")])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('p', [_c('strong', [_vm._v("DESJEJUM")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -43686,19 +43702,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('p', [_vm._v("\n      Planejado: Arroz, Feijão Carioca, Escondidinho de PTS e Mamão."), _c('br'), _vm._v("\n      Servido: Arroz, Feijão Carioca, Escondidinho de PTS e Mamão.\n    ")])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('p', [_vm._v("\n      Planejado: Leite Integral com Achocolatado, Biscoito Salgado e Banana Prata."), _c('br'), _vm._v("\n      Servido: Leite Integral com Achocolatado, Biscoito Salgado e Banana Prata.\n    ")])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticStyle: {
-      "font-size": "19px"
-    }
-  }, [_c('button', {
-    staticClass: "mdl-button mdl-js-button mdl-button--fab mdl-button--colored",
-    staticStyle: {
-      "background-color": "#005653"
-    }
-  }, [_c('i', {
-    staticClass: "material-icons"
-  }, [_vm._v("chevron_left")])]), _vm._v(" "), _c('br'), _vm._v("\n    Voltar\n  ")])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -43766,7 +43769,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "mdl-layout__content"
   }, [_c('div', {
     staticClass: "page-content"
-  }, [_c('router-view')], 1)]), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('footer', {
+  }, [_c('router-view')], 1)]), _vm._v(" "), _c('footer', {
     staticClass: "mdl-mini-footer"
   }, [_c('div', {
     staticClass: "mdl-mini-footer__left-section"
@@ -43865,7 +43868,21 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.comments($event)
       }
     }
-  }, [_vm._v("Comentários")])])]), _vm._v(" "), _c('h3', [_vm._v("EMEF ALVARES DE AZEVEDO")]), _vm._v(" "), _c('p', [_vm._v("\n      2 A 6 ANOS ...\n    ")]), _vm._v(" "), _c('h5', [_vm._v("Comentários da Comunidade")]), _vm._v(" "), _c('hr'), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1)])
+  }, [_vm._v("Comentários")])])]), _vm._v(" "), _c('h3', [_vm._v("EMEF ALVARES DE AZEVEDO")]), _vm._v(" "), _c('p', [_vm._v("\n      2 A 6 ANOS ...\n    ")]), _vm._v(" "), _c('h5', [_vm._v("Comentários da Comunidade")]), _vm._v(" "), _c('hr'), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('div', {
+    staticStyle: {
+      "font-size": "19px"
+    }
+  }, [_c('button', {
+    staticClass: "mdl-button mdl-js-button mdl-button--fab mdl-button--colored",
+    staticStyle: {
+      "background-color": "#005653"
+    },
+    on: {
+      "click": _vm.back
+    }
+  }, [_c('i', {
+    staticClass: "material-icons"
+  }, [_vm._v("chevron_left")])]), _vm._v(" "), _c('br'), _vm._v("\n      Voltar\n    ")])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('ul', {
     staticClass: "demo-list-three mdl-list"
@@ -43902,19 +43919,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("person")]), _vm._v(" "), _c('span', [_vm._v("Bob Odenkirk")]), _vm._v(" "), _c('span', {
     staticClass: "mdl-list__item-text-body"
   }, [_vm._v("\n        Bob Odinkrik played the role of Saul in Breaking Bad. Due to public fondness for the\n        character, Bob stars in his own show now, called \"Better Call Saul\".\n      ")])])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticStyle: {
-      "font-size": "19px"
-    }
-  }, [_c('button', {
-    staticClass: "mdl-button mdl-js-button mdl-button--fab mdl-button--colored",
-    staticStyle: {
-      "background-color": "#005653"
-    }
-  }, [_c('i', {
-    staticClass: "material-icons"
-  }, [_vm._v("chevron_left")])]), _vm._v(" "), _c('br'), _vm._v("\n      Voltar\n    ")])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -43968,7 +43972,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "material-icons"
   }, [_vm._v("account_balance")]), _vm._v(" "), _c('span', [_vm._v("EMEF PRES. NILO PEÇANHA - (TERCEI.)")]), _vm._v(" "), _c('span', {
     staticClass: "mdl-list__item-sub-title"
-  }, [_vm._v("4 Comentários")])])])])
+  }, [_vm._v("4 Comentários")])])]), _vm._v(" "), _c('br')])
 }]}
 module.exports.render._withStripped = true
 if (false) {

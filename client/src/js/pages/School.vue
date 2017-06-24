@@ -49,7 +49,7 @@
 
 
     <div style="font-size: 19px;">
-      <button style="background-color: #005653" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+      <button v-on:click="back" style="background-color: #005653" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
         <i class="material-icons">chevron_left</i>
       </button>
       <br>
@@ -87,6 +87,9 @@
       cardapio(event) {
           event.preventDefault();
           this.$router.push({ path: '/school' })
+      },
+      back() {
+          window.history.back();
       }
 
     }

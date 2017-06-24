@@ -22,12 +22,6 @@
               <router-view></router-view>
           </div>
       </main>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
 
       <footer class="mdl-mini-footer">
           <div class="mdl-mini-footer__left-section">
@@ -66,5 +60,8 @@
 <style scoped>
     .mdl-layout__header, .mdl-layout__tab-bar {
         background-color: #005653 !important;
+    }
+    .mdl-layout__content {
+        margin-bottom: 15px;
     }
 </style>
