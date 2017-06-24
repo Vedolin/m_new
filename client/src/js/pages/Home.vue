@@ -124,4 +124,22 @@
         }
     }
 
+    @media (max-width: 800px) {
+        .box-paragrath {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .box-form {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .box-search {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+
+
 </style>
