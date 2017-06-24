@@ -9,12 +9,13 @@
     </div>
 
     <ul class="nav nav-tabs">
+
       <li class="nav-item">
-        <a class="nav-link active" href="#">Cardápio</a>
+        <a v-on:click="cardapio($event)" class="nav-link active" href="#">Cardápio</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="#">Comentários</a>
+        <a v-on:click="comments($event)" class="nav-link" href="#">Comentários</a>
       </li>
 
     </ul>
@@ -48,7 +49,7 @@
 
 
     <div style="font-size: 19px;">
-      <button style="background-color: #6666ff" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+      <button style="background-color: #005653" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
         <i class="material-icons">chevron_left</i>
       </button>
       <br>
@@ -62,7 +63,7 @@
   export default {
     data() {
       return {
-        data: "06/30/2017"
+        date: "24/03/2017"
       }
     },
     created() {
@@ -77,9 +78,15 @@
 
     },
     methods: {
-      
-      search() {
-          alert("Oi")
+
+      comments(event) {
+          event.preventDefault();
+          this.$router.push({ path: '/school/comments' })
+      },
+
+      cardapio(event) {
+          event.preventDefault();
+          this.$router.push({ path: '/school' })
       }
 
     }

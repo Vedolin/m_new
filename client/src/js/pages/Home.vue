@@ -19,8 +19,8 @@
           <li class="mdl-list__item mdl-list__item--two-line">
               <span class="mdl-list__item-primary-content">
                   <i class="material-icons">account_balance</i>
-                  <span>Bryan Cranston</span>
-                  <span class="mdl-list__item-sub-title">62 Episodes</span>
+                  <span>EMEF PRES. NILO PEÇANHA - (TERCEI.)</span>
+                  <span class="mdl-list__item-sub-title">4 Comentários</span>
               </span>
               <!-- <span class="mdl-list__item-secondary-content">
                   <span class="mdl-list__item-secondary-info">Actor</span>
@@ -39,7 +39,8 @@
         schools: [
           "CEI CONV. RECANTO DA ALEGRIA I",
           "CEI CONV. BELEZINHA PRIMAVERA",
-          "EMEF PRES. NILO PEÇANHA - (TERCEI.)"
+          "EMEF PRES. NILO PEÇANHA - (TERCEI.)",
+          "EMEF ALVARES DE AZEVEDO"
         ]
       }
     },

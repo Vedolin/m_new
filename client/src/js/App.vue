@@ -58,6 +58,6 @@
 
 <style scoped>
     .mdl-layout__header, .mdl-layout__tab-bar {
-        background-color: #bc2026 !important;
+        background-color: #005653 !important;
     }
 </style>
