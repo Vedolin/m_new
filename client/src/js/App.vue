@@ -12,6 +12,7 @@
         <span class="mdl-layout-title">MENU</span>
         <nav class="mdl-navigation">
           <router-link class="mdl-navigation__link" to="/" v-on:click="closeMenu($event)">Home</router-link>
+          <router-link class="mdl-navigation__link" to="/about" v-on:click="closeMenu($event)">Dados Abertos</router-link>
           <router-link class="mdl-navigation__link" to="/about" v-on:click="closeMenu($event)">Sobre</router-link>
         </nav>
       </div>
@@ -28,7 +29,7 @@
                   <li>
                       <router-link to="/">{{ title }}</router-link>
                   </li>
-                  <li><a href="#">Privacy & Terms</a></li>
+                  <!-- <li><a href="#">Privacy & Terms</a></li> -->
               </ul>
           </div>
       </footer>
@@ -41,7 +42,7 @@
     name: 'app',
     data() {
       return {
-        title: 'Alimentação Escolar '
+        title: 'NutriEscola - SME'
       }
     },
     methods: {

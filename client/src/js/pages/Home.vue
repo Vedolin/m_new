@@ -11,20 +11,22 @@
           </div>
       </div>
 
+
       <ul class="demo-list-two mdl-list">
+          <h5>Ultimas Unidades Educacionais vistas</h5>
+          <hr>
 
-        <li class="mdl-list__item mdl-list__item--two-line">
-          <span class="mdl-list__item-primary-content">
-            <i class="material-icons">account_balance</i>
-            <span>Bryan Cranston</span>
-            <span class="mdl-list__item-sub-title">62 Episodes</span>
-          </span>
-          <span class="mdl-list__item-secondary-content">
-            <span class="mdl-list__item-secondary-info">Actor</span>
-            <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
-          </span>
-        </li>
-
+          <li class="mdl-list__item mdl-list__item--two-line">
+              <span class="mdl-list__item-primary-content">
+                  <i class="material-icons">account_balance</i>
+                  <span>Bryan Cranston</span>
+                  <span class="mdl-list__item-sub-title">62 Episodes</span>
+              </span>
+              <!-- <span class="mdl-list__item-secondary-content">
+                  <span class="mdl-list__item-secondary-info">Actor</span>
+                  <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+              </span> -->
+          </li>
       </ul>
 
   </div>
@@ -48,10 +50,11 @@
       jQuery(this.$refs.search).autocomplete({
         source: this.schools
       });
+
     },
     methods: {
       search() {
-          alert("Oi")
+          this.$router.push({ path: '/school' })
       }
     }
   }
