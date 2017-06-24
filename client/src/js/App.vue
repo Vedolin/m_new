@@ -22,6 +22,13 @@
               <router-view></router-view>
           </div>
       </main>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
       <footer class="mdl-mini-footer">
           <div class="mdl-mini-footer__left-section">
               <div class="mdl-logo"></div>

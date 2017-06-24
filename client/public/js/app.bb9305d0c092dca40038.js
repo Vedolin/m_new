@@ -16553,6 +16553,13 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
   name: 'app',
@@ -43759,7 +43766,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "mdl-layout__content"
   }, [_c('div', {
     staticClass: "page-content"
-  }, [_c('router-view')], 1)]), _vm._v(" "), _c('footer', {
+  }, [_c('router-view')], 1)]), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('footer', {
     staticClass: "mdl-mini-footer"
   }, [_c('div', {
     staticClass: "mdl-mini-footer__left-section"
