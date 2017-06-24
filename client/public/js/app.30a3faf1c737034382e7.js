@@ -16637,6 +16637,8 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
 
 exports.default = {
   data: function data() {
@@ -16768,6 +16770,51 @@ exports.default = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -20442,7 +20489,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, "\nh3[data-v-9dbd838a], strong[data-v-9dbd838a] {\n  color: #bc2026 !important;\n}\n", ""]);
+exports.push([module.i, "\nh3[data-v-9dbd838a], strong[data-v-9dbd838a] {\n  color: #bc2026 !important;\n}\n.demo-list-three[data-v-9dbd838a] {\n  width: 650px;\n}\n", ""]);
 
 // exports
 
@@ -43741,13 +43788,9 @@ if (false) {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _vm._m(0)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('h2', [_vm._v("Sobre")]), _vm._v(" "), _c('p', [_vm._v("\n    Testing how to use Vue.js with Wepback and Express.js.\n  ")]), _vm._v(" "), _c('div', {
-    staticClass: "test",
-    staticStyle: {
-      "width": "345px",
-      "height": "455px"
-    }
-  })])
+  return _c('div', {
+    staticClass: "container"
+  }, [_c('h2', [_vm._v("Sobre")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("NutriEscola")]), _vm._v(" "), _c('br'), _vm._v("\n    Informação disponível para todos: "), _c('br'), _vm._v(" transparência, participação social e integridade.\n  ")])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -43771,7 +43814,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "form-group row"
   }, [_c('div', {
     staticClass: "col-6"
-  }, [_vm._v("\n      Data:\n      "), _c('input', {
+  }, [_vm._v("\n        Data:\n        "), _c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -43815,8 +43858,44 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.comments($event)
       }
     }
-  }, [_vm._v("Comentários")])])]), _vm._v(" "), _c('h3', [_vm._v("EMEF ALVARES DE AZEVEDO")]), _vm._v(" "), _c('p', [_vm._v("\n    2 A 6 ANOS ...\n  ")]), _vm._v(" "), _c('h5', [_vm._v("Comentários da Comunidade")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('p'), _vm._v(" "), _vm._m(0)])
+  }, [_vm._v("Comentários")])])]), _vm._v(" "), _c('h3', [_vm._v("EMEF ALVARES DE AZEVEDO")]), _vm._v(" "), _c('p', [_vm._v("\n      2 A 6 ANOS ...\n    ")]), _vm._v(" "), _c('h5', [_vm._v("Comentários da Comunidade")]), _vm._v(" "), _c('hr'), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('ul', {
+    staticClass: "demo-list-three mdl-list"
+  }, [_c('li', {
+    staticClass: "mdl-list__item mdl-list__item--three-line"
+  }, [_c('span', {
+    staticClass: "mdl-list__item-primary-content"
+  }, [_c('i', {
+    staticClass: "material-icons mdl-list__item-avatar"
+  }, [_vm._v("person")]), _vm._v(" "), _c('span', [_vm._v("Bryan Cranston")]), _vm._v(" "), _c('span', {
+    staticClass: "mdl-list__item-text-body"
+  }, [_vm._v("\n        Bryan Cranston played the role of Walter in Breaking Bad. He is also known\n        for playing Hal in Malcom in the Middle.\n      ")])])]), _vm._v(" "), _c('li', {
+    staticClass: "mdl-list__item mdl-list__item--three-line"
+  }, [_c('span', {
+    staticClass: "mdl-list__item-primary-content"
+  }, [_c('i', {
+    staticClass: "material-icons  mdl-list__item-avatar"
+  }, [_vm._v("person")]), _vm._v(" "), _c('span', [_vm._v("Aaron Paul")]), _vm._v(" "), _c('span', {
+    staticClass: "mdl-list__item-text-body"
+  }, [_vm._v("\n        Aaron Paul played the role of Jesse in Breaking Bad. He also featured in\n        the \"Need For Speed\" Movie.\n      ")])])]), _vm._v(" "), _c('li', {
+    staticClass: "mdl-list__item mdl-list__item--three-line"
+  }, [_c('span', {
+    staticClass: "mdl-list__item-primary-content"
+  }, [_c('i', {
+    staticClass: "material-icons  mdl-list__item-avatar"
+  }, [_vm._v("person")]), _vm._v(" "), _c('span', [_vm._v("Bob Odenkirk")]), _vm._v(" "), _c('span', {
+    staticClass: "mdl-list__item-text-body"
+  }, [_vm._v("\n        Bob Odinkrik played the role of Saul in Breaking Bad. Due to public fondness for the\n        character, Bob stars in his own show now, called \"Better Call Saul\".\n      ")])])]), _vm._v(" "), _c('li', {
+    staticClass: "mdl-list__item mdl-list__item--three-line"
+  }, [_c('span', {
+    staticClass: "mdl-list__item-primary-content"
+  }, [_c('i', {
+    staticClass: "material-icons  mdl-list__item-avatar"
+  }, [_vm._v("person")]), _vm._v(" "), _c('span', [_vm._v("Bob Odenkirk")]), _vm._v(" "), _c('span', {
+    staticClass: "mdl-list__item-text-body"
+  }, [_vm._v("\n        Bob Odinkrik played the role of Saul in Breaking Bad. Due to public fondness for the\n        character, Bob stars in his own show now, called \"Better Call Saul\".\n      ")])])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticStyle: {
       "font-size": "19px"
@@ -43828,7 +43907,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('i', {
     staticClass: "material-icons"
-  }, [_vm._v("chevron_left")])]), _vm._v(" "), _c('br'), _vm._v("\n    Voltar\n  ")])
+  }, [_vm._v("chevron_left")])]), _vm._v(" "), _c('br'), _vm._v("\n      Voltar\n    ")])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -43851,7 +43930,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "text-center"
   }, [_vm._v("Informações sobre alimentação escolar.")]), _vm._v(" "), _c('p', {
     staticClass: "text-center lead"
-  }, [_vm._v("This is a modified jumbotron that occupies the entire horizontal space of its parent.")]), _vm._v(" "), _c('form', {
+  }, [_vm._v("\n                Informação disponível para todos: transparência, participação social e integridade..\n            ")]), _vm._v(" "), _c('form', {
     staticClass: "box-form form-inline"
   }, [_c('input', {
     ref: "search",

@@ -3,7 +3,9 @@
       <div class="jumbotron jumbotron-fluid">
           <div class="container">
               <h4 class="text-center">Informações sobre alimentação escolar.</h4>
-              <p class="text-center lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+              <p class="text-center lead">
+                  Informação disponível para todos: transparência, participação social e integridade..
+              </p>
               <form class="box-form form-inline">
                   <input ref="search" class="box-search form-control" type="text" placeholder="Digite o nome da escola">
                   <button v-on:click="search()" class="btn btn-outline-success" type="button">Buscar</button>

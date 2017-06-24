@@ -1,12 +1,10 @@
 <template>
-  <div>
+  <div class="container">
     <h2>Sobre</h2>
     <p>
-      Testing how to use Vue.js with Wepback and Express.js.
+      <strong>NutriEscola</strong>
+      <br>
+      Informação disponível para todos: <br> transparência, participação social e integridade.
     </p>
-
-    <div style="width: 345px; height: 455px;" class="test">
-
-    </div>
   </div>
 </template>
