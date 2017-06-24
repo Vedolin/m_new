@@ -4,7 +4,7 @@
     <div class="form-group row">
       <div class="col-6">
         Data:
-        <input v-model="data" class="form-control" ref="datepicker">
+        <input v-model="date" class="form-control" ref="datepicker">
       </div>
     </div>
 

@@ -16766,7 +16766,7 @@ exports.default = {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 //
 //
@@ -16810,30 +16810,30 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 exports.default = {
-    data: function data() {
-        return {
-            date: "24/03/2017"
-        };
-    },
-    created: function created() {
-        var d = new Date();
-        this.date = d.getDay() + "/" + d.getMonth() + "/" + d.getFullYear();
-    },
-    mounted: function mounted() {
+  data: function data() {
+    return {
+      date: "24/03/2017"
+    };
+  },
+  created: function created() {},
+  mounted: function mounted() {
 
-        jQuery(this.$refs.datepicker).datepicker();
-    },
+    jQuery(this.$refs.datepicker).datepicker();
+    var d = new Date();
+    this.date = d.getDay() + "/" + d.getMonth() + "/" + d.getFullYear();
+    jQuery(this.$refs.datepicker).val(this.date);
+  },
 
-    methods: {
-        comments: function comments(event) {
-            event.preventDefault();
-            this.$router.push({ path: '/school/comments' });
-        },
-        cardapio: function cardapio(event) {
-            event.preventDefault();
-            this.$router.push({ path: '/school' });
-        }
+  methods: {
+    comments: function comments(event) {
+      event.preventDefault();
+      this.$router.push({ path: '/school/comments' });
+    },
+    cardapio: function cardapio(event) {
+      event.preventDefault();
+      this.$router.push({ path: '/school' });
     }
+  }
 };
 
 /***/ }),
@@ -43583,18 +43583,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.data),
-      expression: "data"
+      value: (_vm.date),
+      expression: "date"
     }],
     ref: "datepicker",
     staticClass: "form-control",
     domProps: {
-      "value": (_vm.data)
+      "value": (_vm.date)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.data = $event.target.value
+        _vm.date = $event.target.value
       }
     }
   })])]), _vm._v(" "), _c('ul', {
@@ -43640,7 +43640,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('button', {
     staticClass: "mdl-button mdl-js-button mdl-button--fab mdl-button--colored",
     staticStyle: {
-      "background-color": "#6666ff"
+      "background-color": "#005653"
     }
   }, [_c('i', {
     staticClass: "material-icons"
@@ -43824,7 +43824,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('button', {
     staticClass: "mdl-button mdl-js-button mdl-button--fab mdl-button--colored",
     staticStyle: {
-      "background-color": "#6666ff"
+      "background-color": "#005653"
     }
   }, [_c('i', {
     staticClass: "material-icons"

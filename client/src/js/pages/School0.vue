@@ -46,12 +46,14 @@
       }
     },
     created() {
-        var d = new Date();
-        this.date = d.getDay() + "/" + d.getMonth() +  "/" + d.getFullYear();
+
     },
     mounted() {
 
       jQuery(this.$refs.datepicker).datepicker();
+      var d = new Date();
+      this.date = d.getDay() + "/" + d.getMonth() +  "/" + d.getFullYear();
+      jQuery(this.$refs.datepicker).val(this.date);
 
     },
     methods: {
